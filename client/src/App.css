@@ -1,0 +1,105 @@
+.App {
+	text-align: center;
+}
+
+.App-content {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+h1 {
+	padding: 0 1rem;
+	margin-top: -4rem;
+}
+.main input {
+	font-family: 'ColfaxAI', Helvetica, sans-serif;
+}
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.main form {
+	display: flex;
+	flex-direction: column;
+	width: 70vw;
+	margin-top: 2rem;
+}
+.main textarea {
+	resize: none;
+	font: inherit;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	padding: 0.7rem 1rem;
+	margin-bottom: 1rem;
+	scroll-behavior: smooth;
+	background-color: #353740;
+	color: white;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.main input[type='submit'],
+button {
+	font: inherit;
+	padding: 0.7rem 0;
+	color: #fff;
+	background-color: #109977;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.5s background-color;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.main button {
+	background-color: #359a3c;
+	align-items: center;
+	width: 50%;
+	padding: 0.7rem 0.2rem;
+}
+.main button.save-button {
+	background-color: #9a8735;
+}
+.main input[type='submit']:hover {
+	background-color: #086b52;
+}
+.main button:hover:not(:disabled) {
+	background-color: #0e7d15;
+}
+.main button.save-button:hover:not(:disabled) {
+	background-color: #726112;
+}
+.main input[type='submit']:disabled,
+button:disabled,
+button.save-button:disabled {
+	background-color: #6b6b6b;
+	cursor: not-allowed;
+}
+.main .button-wrapper {
+	margin-top: 1rem;
+	display: flex;
+	width: 70vw;
+	gap: 1rem;
+	flex-direction: row;
+}
+.main .result {
+	width: 80vw;
+	max-height: 35vh;
+}
+.main .result .message {
+	font-size: calc(0.7rem + 1vmin);
+	max-height: 35vh;
+	overflow-y: overlay;
+	scroll-behavior: smooth;
+	text-align: left;
+	white-space: pre-line;
+}
+.main .result .message p {
+	padding: 1rem;
+	margin: 0;
+}
